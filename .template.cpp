@@ -3,10 +3,10 @@
 using namespace std;
  
 typedef long long ll;
-typedef pair<int,int> pii;
-typedef pair<ll,int> pli;
-typedef pair<int,int> pil;
-typedef pair<ll,ll> pll;
+typedef pair<int, int> pii;
+typedef pair<ll, int> pli;
+typedef pair<int, ll> pil;
+typedef pair<ll, ll> pll;
 typedef vector<int> vi;
 typedef vector<ll> vl;
  
@@ -18,13 +18,13 @@ typedef vector<ll> vl;
 #define E end()
 #define F first
 #define S second
-#define px(x) printf("%s = %d\n",#x,x)
-#define px2(x,y) printf("%s %d %s %d\n",#x,x,#y,y)
-#define px3(x,y,z) printf("%s %d %s %d %s %d\n",#x,x,#y,y,#z,z)
-#define pxl(x) printf("%s = %lld\n",#x,x)
+#define px(x) printf("%s = %d\n", #x, x)
+#define px2(x, y) printf("%s %d %s %d\n", #x, x, #y, y)
+#define px3(x, y, z) printf("%s %d %s %d %s %d\n", #x, x, #y, y, #z, z)
+#define pxl(x) printf("%s = %lld\n", #x, x)
 #define gc getchar
 #define pc putchar
-const ll mod=1000000007;
+const ll mod = 1000000007;
  
 template < class T > void readpos(T &x) { register int c; while(c = gc(), c <= 32);  x = c&15; while(c = gc(), c > 32) x = (x<<3)+(x<<1) + (c&15); }
 template < class T > void read(T &x) { register int c, mi = 0; while(c = gc(), c <= 32); if(c == '-') mi = 1, x = 0; else x = c&15; while(c = gc(), c > 32) x = (x<<3)+(x<<1) + (c&15); if(mi == 1) x = -x; }
@@ -54,13 +54,13 @@ int main(){
         freopen("input.txt","r",stdin);
         clock_t start1=clock();
     #endif
-    int i,t,n,a[MAXN];
+    int i, t, n, a[MAXN];
     read(t);
-    //t=1;
+    //t = 1;
     while(t--){
         read(n);
-        reada(a,n);
-        printa(a,n);
+        reada(a, n);
+        printa(a, n);
     }
     #ifdef LOCAL
         printf("%.3lf seconds\n",(double)(clock()-start1)/CLOCKS_PER_SEC);

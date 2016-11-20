@@ -8,3 +8,4 @@ set autoindent
 set pastetoggle=<F2>
 set shiftwidth=4
 set softtabstop=4
+autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
